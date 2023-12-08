@@ -46,6 +46,12 @@
       "max": "40",
       "required": true,
       "default": "1"
+    },
+    "recruitment_applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recruitment-application.recruitment-application",
+      "mappedBy": "blog"
     }
   }
 }
