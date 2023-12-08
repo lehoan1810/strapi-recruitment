@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true,
+      "unique": true
+    },
+    "position": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true,
+      "default": "marketing"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "TP.Hồ Chí Minh"
+    },
+    "experient": {
+      "type": "biginteger",
+      "max": "40",
+      "required": true,
+      "default": "1"
+    }
+  }
+}
